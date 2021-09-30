@@ -21,8 +21,7 @@
     "lint": "standard --verbose | snazzy",
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
     "fixcode": "standard --fix",
-    "git-hook": "npm run lint -s && npm run test -s",
-    "postinstall": "cd scripts && postinstall.sh"
+    "git-hook": "npm run lint -s && npm run test -s"    
   },
   "rnpm": {
     "assets": [
