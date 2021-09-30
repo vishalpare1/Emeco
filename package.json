@@ -22,7 +22,7 @@
     "lintdiff": "git diff --name-only --cached --relative | grep '\\.js$' | xargs standard | snazzy",
     "fixcode": "standard --fix",
     "git-hook": "npm run lint -s && npm run test -s",
-    "postinstall": "scripts/postinstall.sh"
+    "postinstall": "cd scripts && postinstall.sh"
   },
   "rnpm": {
     "assets": [
